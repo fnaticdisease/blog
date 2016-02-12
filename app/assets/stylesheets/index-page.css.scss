@@ -1,0 +1,187 @@
+html, body {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+html .page-wrapper, body .page-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+html .page-wrapper .post-wrapper, body .page-wrapper .post-wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #efbe66 url("https://mackenziechild.me/wp-content/themes/mackenziechild_2016/images/topo_bg.png");
+}
+
+html .page-wrapper .post-wrapper .post-box, body .page-wrapper .post-wrapper .post-box {
+  width: 25%;
+  height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+html .page-wrapper .post-wrapper .post-box:hover, body .page-wrapper .post-wrapper .post-box:hover {
+  cursor: pointer;
+}
+
+html .page-wrapper .post-wrapper .post-box img, body .page-wrapper .post-wrapper .post-box img {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+html .page-wrapper .post-wrapper .post-box .post-info, body .page-wrapper .post-wrapper .post-box .post-info {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+html .page-wrapper .post-wrapper .post-box .post-info .read-button, body .page-wrapper .post-wrapper .post-box .post-info .read-button {
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid #333;
+  margin-bottom: -30px;
+  background-color: #333;
+}
+
+html .page-wrapper .post-wrapper .post-box .post-info .read-button:hover, body .page-wrapper .post-wrapper .post-box .post-info .read-button:hover {
+  color: white;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+html .page-wrapper .post-wrapper .post-box .post-info .post-title, body .page-wrapper .post-wrapper .post-box .post-info .post-title {
+  text-decoration: none;
+  color: white;
+  font-family: raleway;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+html .page-wrapper .post-footer, body .page-wrapper .post-footer {
+  position: relative;
+  height: 75px;
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+html .page-wrapper .post-footer .mail, body .page-wrapper .post-footer .mail{
+  color:#333;
+  font-size: 24px;
+  line-height: 75px;
+}
+
+html .page-wrapper .post-footer .post-social, body .page-wrapper .post-footer  .post-social {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+html .page-wrapper .post-footer.post-social li, body .page-wrapper .post-footer .post-social li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+
+html .page-wrapper .post-header, body .page-wrapper .post-header {
+  height: 135px;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+html .page-wrapper .post-header .logo, body .page-wrapper .post-header .logo {
+  height: 75px;
+  width: 75px;
+  background-image: url("logo2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+

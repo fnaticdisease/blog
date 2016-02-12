@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.new-post {
+  text-align: center;
+}
+
+.new-post-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-area-size {
+  height: 500px;
+  width: 800px;
+}
+
+
+
+.new-post-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}

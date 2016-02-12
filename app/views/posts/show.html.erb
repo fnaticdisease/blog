@@ -1,0 +1,24 @@
+<div class="show-wrapper">
+	<header class="post-header">
+	      <%= link_to posts_path do %>
+  			<div class="logo"></div>
+			<% end %>
+	      <div class="update-buttons">
+	      	<div class="update-edit"><%= link_to "Edit" , edit_post_path(@post)%></div>
+			<div class="update-delete"><%= link_to "Delete" , post_path(@post), method: :delete,data:{confirm:"Are you sure you want to delete the post?"} %></div>
+	      </div>
+	</header>
+	<section class="show-body">
+		<div class="show-image">
+			<%= image_tag @post.image.url() %>
+		</div>
+		
+		<h2 class="show-title"><%= @post.title %> </h2>
+		<div class="show-content">
+			<%= simple_format @post.content %>
+
+
+		</div>
+		
+	</section>
+</div>

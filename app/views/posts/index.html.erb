@@ -1,0 +1,30 @@
+<div class="page-wrapper">
+	<header class="post-header">
+	      <%= link_to root_path do %>
+  			<div class="logo"></div>
+			<% end %>
+	</header>
+	<section class="post-wrapper">
+
+	<% @posts.each do |post| %>
+		
+		<figure class="post-box">
+			<%= image_tag post.image.url(:medium) %>
+			<div class="post-info">
+				<a class="post-title"><%= post.title %></a>		
+				<%= link_to "Read Post",post , :class => "read-button"%>
+			</div>
+		</figure>
+
+	<%end %>
+	</section>
+	<footer class="post-footer">
+		<a href="mailto:petruradulescu.v@gmail.com" class="mail">petruradulescu.v@gmail.com</a>
+		<ul class="post-social">
+			<li><a href="https://www.facebook.com/R.PETRUnd" class="post-fb">facebook</a></li>
+			<li><a href="https://twitter.com/PetruRadulescu" class="post-tw">twitter</a></li>
+		</ul>
+	</footer>
+
+    </div>
+
